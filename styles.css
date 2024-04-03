@@ -149,7 +149,7 @@
   font-size: 3.16rem;
 }
 .container {
-min-height: 218vh; /* เปลี่ยนค่า min-height เป็นที่ต้องการ เช่น 150vh */
+min-height: 188vh; /* เปลี่ยนค่า min-height เป็นที่ต้องการ เช่น 150vh */
 padding-bottom: 50px;
 margin: 0 auto;
 position: relative;
@@ -178,7 +178,7 @@ position: relative;
   font-size: 1.0rem;
 }
 .txt h1 {
-  font-size: 2.0rem;
+  font-size: 1.85rem;
 }
 .container {
 min-height: 200vh; /* เปลี่ยนค่า min-height เป็นที่ต้องการ เช่น 150vh */
