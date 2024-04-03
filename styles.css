@@ -285,10 +285,4 @@ position: relative;
   border-radius: 25px;
   cursor: pointer;
 }
-.container {
-min-height: 300vh; /* เปลี่ยนค่า min-height เป็นที่ต้องการ เช่น 150vh */
-padding-bottom: 50px;
-margin: 0 auto;
-position: relative;
-}
 }
