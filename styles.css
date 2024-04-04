@@ -11,7 +11,7 @@
   list-style: none;
 }
 .container {
-  min-height: 120vh;
+  min-height: 100vh;
   padding-bottom: 50px;
   margin: 0 auto;
   position: relative;
@@ -123,7 +123,7 @@
   background-image: url("https://s.isanook.com/ga/0/ud/220/1104217/rov_12.jpg?ip/resize/w728/q80/jpg");
 }
 .phuket h2 {
-  font-size: 1.7rem;
+  font-size: 3.0rem;
   letter-spacing: 1.8px;
   background: linear-gradient(135deg, #4F6F52 0%, #739072 25%, #86A789 50%, #739072 75%, #4F6F52 100%);
   background-size: 400%;
@@ -137,7 +137,7 @@
   align-items: center;
 }
 .txt h1 {
-  font-size: 5.5rem;
+  font-size: 8.0rem;
    background: linear-gradient(135deg, #4F6F52 0%, #739072 25%, #86A789 50%, #739072 75%, #4F6F52 100%);
   background-size: 400%;
   -webkit-background-clip: text;
@@ -146,6 +146,7 @@
 }
 .phuket p {
   opacity: 0.6;
+  font-size: 1.5rem;
 }
 .tnx h2 i {
   color: #fd7e13;
@@ -176,7 +177,7 @@ body {
 
 h1 {
     color: #fff;
-    font-size: 3.4vh;
+    font-size: 6.0vh;
     font-weight: 600;
 }
 
@@ -222,6 +223,11 @@ h1 span.stop-blinking::before {
   background-size: cover;
   background-position: center;
 }
+  h1 {
+    color: #fff;
+    font-size: 2.8vh;
+    font-weight: 600;
+}
   .box3 {
   width: 90%;
   height: 220px;
@@ -237,8 +243,12 @@ h1 span.stop-blinking::before {
 .txt h1 {
   font-size: 2.5rem;
 }
+  .phuket p {
+  opacity: 0.6;
+  font-size: 0.5rem;
+}
 .container {
-min-height: 180vh; /* เปลี่ยนค่า min-height เป็นที่ต้องการ เช่น 150vh */
+min-height: 170vh;
 padding-bottom: 50px;
 margin: 0 auto;
 position: relative;
@@ -276,3 +286,4 @@ position: relative;
   background-size: cover;
   background-position: center;
   }
+ 
