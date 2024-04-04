@@ -223,6 +223,14 @@ h1 span.stop-blinking::before {
   background-size: cover;
   background-position: center;
 }
+  .card h2 {
+  color: #fff;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 1.0rem;
+  letter-spacing: 1px;
+}
   h1 {
     color: #fff;
     font-size: 2.5vh;
@@ -248,7 +256,7 @@ h1 span.stop-blinking::before {
   font-size: 0.5rem;
 }
 .container {
-min-height: 170vh;
+min-height: 150vh;
 padding-bottom: 50px;
 margin: 0 auto;
 position: relative;
