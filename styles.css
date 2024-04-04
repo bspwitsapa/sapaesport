@@ -219,13 +219,13 @@ h1 span.stop-blinking::before {
   position: absolute;
   z-index: -1;
   filter: brightness(45%);
-  background-image: url("https://images.hdqwalls.com/download/hayate-star-ocean-arena-of-valor-95-1280x2120.jpg");
+  background-image: url("https://i.pinimg.com/736x/d6/66/65/d666658cd96a7009c9c9b4bab1a662f9.jpg");
   background-size: cover;
   background-position: center;
 }
   h1 {
     color: #fff;
-    font-size: 2.8vh;
+    font-size: 2.5vh;
     font-weight: 600;
 }
   .box3 {
