@@ -28,4 +28,5 @@ const typeEffect = () => {
         setTimeout(typeEffect, 1200);
     }
 }
+
 typeEffect();
