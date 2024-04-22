@@ -76,7 +76,7 @@
   align-items: center;
 }
 .container {
-  min-height: 200vh;
+  min-height: 100vh;
   padding-bottom: 50px;
   margin: 0 auto;
   position: relative;
@@ -205,6 +205,12 @@ h1 span.stop-blinking::before {
 @keyframes blink {
     50% { opacity: 0 }
 }
+.audio-container {
+  width: 200px; /* ลดความกว้างลง */
+  height: 80px; /* ลดความสูงลง */
+  margin-top: 20px; /* ปรับค่า margin-top ตามที่ต้องการ */
+}
+
 /* สำหรับหน้าจอขนาดเล็ก (เช่น โทรศัพท์) */
 @media only screen and (max-width: 600px) {
 .navBar {
@@ -261,10 +267,17 @@ padding-bottom: 50px;
 margin: 0 auto;
 position: relative;
 }
-}
 .content {
   width: 95%;
 }
 .card {
   grid-template-columns: auto;
+}
+body {
+  background: #444;
+}
+audio {
+  width: 180px;
+  height: 50px;
+}
 }
