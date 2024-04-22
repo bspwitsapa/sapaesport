@@ -125,7 +125,7 @@
 .phuket h2 {
   font-size: 2.5rem;
   letter-spacing: 1.8px;
-  background: linear-gradient(135deg, #4F6F52 0%, #739072 25%, #86A789 50%, #739072 75%, #4F6F52 100%);
+  background: linear-gradient(135deg, #898121 0%, #E8751A 25%, #FDA403 50%, #E8751A 75%, #898121 100%);
   background-size: 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
@@ -138,7 +138,7 @@
 }
 .txt h1 {
   font-size: 8.0rem;
-   background: linear-gradient(135deg, #4F6F52 0%, #739072 25%, #86A789 50%, #739072 75%, #4F6F52 100%);
+   background: linear-gradient(135deg, #898121 0%, #E8751A 25%, #FDA403 50%, #E8751A 75%, #898121 100%);
   background-size: 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
