@@ -117,10 +117,10 @@
   background-image: url("https://img.4gamers.com.tw/news-image/dcb583b7-97b4-4b6c-9613-4291422c6db2.jpg");
 }
 .box3 {
-  background-image: url("https://img.4gamers.com.tw/news-image/cd6446b9-a40a-4b68-ad90-874b10c50f8f.jpg");
+  background-image: url("https://www.online-station.net/wp-content/uploads/2022/10/Skin-20221029_Sephera.jpg");
 }
 .box4 {
-  background-image: url("https://s.isanook.com/ga/0/ud/220/1104217/rov_12.jpg?ip/resize/w728/q80/jpg");
+  background-image: url("https://i0.wp.com/news.seagm.com/wp-content/uploads/2023/03/krixi-skin.jpeg?resize=750%2C461&ssl=1");
 }
 .phuket h2 {
   font-size: 2.5rem;
@@ -213,71 +213,54 @@ h1 span.stop-blinking::before {
 
 /* สำหรับหน้าจอขนาดเล็ก (เช่น โทรศัพท์) */
 @media only screen and (max-width: 600px) {
-.navBar {
-  width: 100%;
-}
+  .navBar {
+    width: 100%;
+  }
   .bg::after {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  filter: brightness(45%);
-  background-image: url("https://i.pinimg.com/736x/d6/66/65/d666658cd96a7009c9c9b4bab1a662f9.jpg");
-  background-size: cover;
+    background-image: url("https://i.pinimg.com/736x/d6/66/65/d666658cd96a7009c9c9b4bab1a662f9.jpg");
+  }
+.card .box1,
+.box2,
+.box3,
+.box4 {
+  width: 190px; /* ปรับความกว้างของกล่อง */
+  height: 190px; /* ปรับความสูงของกล่อง */
   background-position: center;
-}
-  .card h2 {
-  color: #fff;
-  position: absolute;
-  bottom: 15px;
-  left: 20px;
-  font-size: 1.0rem;
-  letter-spacing: 1px;
-}
-  h1 {
-    color: #fff;
-    font-size: 2.5vh;
-    font-weight: 600;
-}
-  .box3 {
-  width: 90%;
-  height: 220px;
-  background-position: right;
   background-size: cover;
   position: relative;
   border-radius: 25px;
   cursor: pointer;
 }
-.phuket h2 {
-  font-size: 0.7rem;
-}
-.txt h1 {
-  font-size: 2.5rem;
-}
+
+  .card h2 {
+    font-size: 1.0rem;
+  }
+  h1 {
+    font-size: 2.5vh;
+  }
+  .phuket h2 {
+    font-size: 0.7rem;
+  }
+  .txt h1 {
+    font-size: 2.5rem;
+  }
   .phuket p {
-  opacity: 0.6;
-  font-size: 0.5rem;
-}
-.container {
-min-height: 165vh;
-padding-bottom: 50px;
-margin: 0 auto;
-position: relative;
-}
-.content {
-  width: 95%;
-}
-.card {
-  grid-template-columns: auto;
-}
-body {
-  background: #444;
-}
-audio {
-  width: 180px;
-  height: 50px;
-}
+    font-size: 0.5rem;
+  }
+  .container {
+    min-height: 165vh;
+  }
+  .content {
+    width: 95%;
+  }
+  .card {
+    grid-template-columns: auto;
+  }
+  body {
+    background: #444;
+  }
+  audio {
+    width: 180px;
+    height: 50px;
+  }
 }
