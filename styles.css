@@ -210,14 +210,17 @@ h1 span.stop-blinking::before {
   height: 80px; /* ลดความสูงลง */
   margin-top: 20px; /* ปรับค่า margin-top ตามที่ต้องการ */
 }
+/* สำหรับหน้า Sources */
+.page-sources {
+  display: none;
+}
 
-/* สำหรับหน้าจอขนาดเล็ก (เช่น โทรศัพท์) */
 @media only screen and (max-width: 600px) {
   .navBar {
     width: 100%;
   }
   .bg::after {
-    background-image: url("https://i.pinimg.com/564x/49/5c/e6/495ce6ad92c19a03cf7150a4ac10b64f.jpg");
+    background-image: url("sin.jpg");
   }
 .card .box1,
 .box2,
@@ -263,4 +266,7 @@ h1 span.stop-blinking::before {
     width: 180px;
     height: 50px;
   }
+  .container {
+    max-height: none;
+}
 }
