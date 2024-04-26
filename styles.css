@@ -35,6 +35,9 @@
   background-position: center;
   background-attachment: fixed; /* เพิ่ม background-attachment เป็น fixed */
 }
+.container {
+  overflow-x: hidden;
+}
 @keyframes animate {
   to{
     background-position: 450%
@@ -233,6 +236,9 @@ h1 span.stop-blinking::before {
     background-size: cover; /* ปรับ background-size เป็น cover */
     background-position: center;
     background-attachment: fixed; /* เพิ่ม background-attachment เป็น fixed */
+  }
+  .container {
+    overflow-x: hidden;
   }
 .card .box1,
 .box2,
