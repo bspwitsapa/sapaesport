@@ -27,7 +27,7 @@ body {
   min-height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(75%);
+  filter: brightness(50%);
 }
 
 .container {
@@ -84,7 +84,6 @@ body {
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  flex-wrap: wrap;
 }
 
 .esport {
@@ -101,7 +100,6 @@ body {
 .card h2 {
   color: #fff;
   text-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
-  background: rgba(0, 0, 0, 0.25);
   padding: 5px 10px;
   border-radius: 10px;
   position: absolute;
@@ -150,7 +148,7 @@ body {
 .esport h2 {
   font-size: 2.5rem;
   letter-spacing: 1.8px;
-  background: linear-gradient(135deg, #898121 0%, #E8751A 25%, #FDA403 50%, #E8751A 75%, #898121 100%);
+  background: linear-gradient(135deg, #ffea03 20%, #e6ff03b6 25%, #e6ff036e 50%, #e6ff03b6 75%, #ffea03 100%);
   background-size: 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -159,7 +157,7 @@ body {
 
 .txt h1 {
   font-size: 8.0rem;
-  background: linear-gradient(135deg, #898121 0%, #E8751A 25%, #FDA403 50%, #E8751A 75%, #898121 100%);
+  background: linear-gradient(135deg, #ffea03 20%, #e6ff03b6 25%, #e6ff036e 50%, #e6ff03b6 75%, #ffea03 100%);
   background-size: 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -218,67 +216,64 @@ h1 span.stop-blinking::before {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  .content {
-    position: static;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 80px;
+@media only screen and (max-width: 600px) {
+  .navBar {
+    width: 100%;
   }
 
-  .esport, .card {
-    width: 95% !important;
-  }
-
-  .card {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    justify-items: center;
+  .container {
+    overflow-x: hidden;
+    min-height: 165vh;
+    max-height: none;
   }
 
   .card .box1,
   .box2,
   .box3,
   .box4 {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    width: 190px;
+    height: 190px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
   }
 
   .card h2 {
-    font-size: 1.2rem;
-    padding: 8px 14px;
-  }
-
-  .txt h1 {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .esport p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .audio-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    font-size: 1.0rem;
   }
 
   h1 {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 2.5vh;
   }
 
   .esport h2 {
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .txt h1 {
+    font-size: 2.5rem;
+  }
+
+  .esport p {
+    font-size: 0.5rem;
+  }
+
+  .content {
+    width: 95%;
+  }
+
+  .card {
+    grid-template-columns: auto;
   }
 
   body {
-    flex-direction: column;
-    background: #222;
-    height: auto;
+    background: #444;
+  }
+
+  audio {
+    width: 180px;
+    height: 50px;
   }
 }
