@@ -1,4 +1,3 @@
-// พิมพ์ชื่อแบบ Typewriter Effect
 const dynamicText = document.querySelector("h1 span");
 const words = ["MiiNova", "Siwat", "m.mii.kub", "SAPA67", "IT SAPA"];
 
@@ -34,34 +33,26 @@ function typeEffect() {
 typeEffect();
 
 document.addEventListener("DOMContentLoaded", () => {
-    const audio = document.getElementById("bgMusic");
-    const muteBtn = document.getElementById("muteBtn");
-    const icon = muteBtn.querySelector("i");
-  
-    // เริ่มเล่นแบบเสียงเบาและค่อย ๆ ดังขึ้น
-    audio.volume = 0;
-    audio.muted = false;
-    const maxVolume = 0.3;
-  
-    audio.play().then(() => {
-      let vol = 0;
-      const interval = setInterval(() => {
-        vol += 0.01;
-        if (vol >= maxVolume) {
-          audio.volume = maxVolume;
-          clearInterval(interval);
-        } else {
-          audio.volume = vol;
-        }
-      }, 100);
-    }).catch(err => {
-      console.warn("Autoplay blocked:", err);
-    });
-  
-    // ปุ่ม mute/unmute
-    muteBtn.addEventListener("click", () => {
-      audio.muted = !audio.muted;
-      icon.className = audio.muted ? "fas fa-volume-mute" : "fas fa-volume-up";
-    });
+  const audio = document.getElementById("bgMusic");
+  const muteBtn = document.getElementById("muteBtn");
+  const icon = muteBtn.querySelector("i");
+
+  audio.volume = 0.3;
+  audio.muted = true;
+
+  muteBtn.addEventListener("click", () => {
+    if (audio.muted || audio.paused) {
+      audio.muted = false;
+      audio.play().then(() => {
+        icon.className = "fa-solid fa-volume-high fa-beat-fade";
+        muteBtn.title = "ปิดเสียง";
+      }).catch(err => {
+        console.warn("⛔ Autoplay error:", err);
+      });
+    } else {
+      audio.muted = true;
+      icon.className = "fa-solid fa-volume-xmark";
+      muteBtn.title = "เปิดเสียง";
+    }
   });
-  
+});

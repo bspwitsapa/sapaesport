@@ -1,55 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SAPA E-Sport 2024</title>
-  <link rel="shortcut icon" type="image/x-icon" href="sapa.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="animate.js" defer></script>
-  <script src="scripts.js" defer></script>
 </head>
 
 <body>
-  <div class="mobile-cover-video">
-  <video autoplay muted loop playsinline>
-    <source src="mobile01.mp4" type="video/mp4">
-    เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+  <!-- VDO BG -->
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="bg01.webm" type="video/webm" />
+    เบราว์เซอร์ของคุณไม่รองรับวิดีโอพื้นหลัง
   </video>
-</div>
 
-  <audio id="bgMusic" autoplay loop muted>
-    <source src="ride on.mp3" type="audio/mpeg">
-    เบราว์เซอร์ของคุณไม่รองรับเสียงเพลงพื้นหลัง
+  <!-- Sound BG -->
+  <audio id="bgMusic" preload="auto">
+    <source src="ride on.mp3" type="audio/mpeg" />
+    เบราว์เซอร์ของคุณไม่รองรับเสียงเพลง
   </audio>
 
-  <video autoplay muted loop playsinline id="bgVideo">
-    <source src="bg01.webm" type="video/mp4">
-    บราวเซอร์ของคุณไม่รับรองวิดีโอพื้นหลัง.
-  </video>
-
-  <button id="muteBtn" class="mute-toggle" title="เปิด/ปิดเสียง">
-    <i class="fa-solid fa-volume-high fa-beat-fade"></i>
+  <!-- Play/pause -->
+  <button id="muteBtn" class="mute-toggle" title="เปิดเสียง">
+    <i class="fa-solid fa-volume-xmark"></i>
   </button>
 
   <div class="container bg">
     <div class="navBar"></div>
-
     <div class="content">
       <div class="esport" style="width:50%;">
         <div class="tnx">
           <meta name="head1" content="BSP, SAPA">
           <h2><i class="school name"></i> BSPWITTAYA</h2>
         </div>
-
         <div class="txt">
           <h1>SAPA</h1>
         </div>
-
         <h1>This page was made by <span></span></h1>
-
         <div class="creator">
           <p><small>เว็บไซต์สำหรับลงทะเบียนการแข่งขัน SAPA E-Sport ของโรงเรียนบางสะพานวิทยา
               จัดทำขึ้นโดยสภานักเรียนทีมเทคโนโลยีสารสนเทศ (IT Support - Student Council)</small></p>
@@ -86,6 +76,29 @@
     </div>
   </div>
 
-</body>
+  <script>
+    const dynamicText = document.querySelector("h1 span");
+    const words = ["MiiNova", "Siwat", "m.mii.kub", "SAPA67", "IT SAPA"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
 
-</html>
+    function typeEffect() {
+      const currentWord = words[wordIndex];
+      const updatedText = currentWord.slice(0, charIndex);
+      dynamicText.textContent = updatedText;
+      dynamicText.classList.add("stop-blinking");
+
+      if (!isDeleting && charIndex < currentWord.length) {
+        charIndex++;
+        setTimeout(typeEffect, 150);
+      } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(typeEffect, 80);
+      } else {
+        isDeleting = !isDeleting;
+        dynamicText.classList.remove("stop-blinking");
+        if (!isDeleting) wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(typeEffect, 1200);
+      }
+    }
