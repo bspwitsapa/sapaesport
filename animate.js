@@ -1,9 +1,8 @@
 const dynamicText = document.querySelector("h1 span");
-const words = ["Mii", "Siwat", "m.mii.kub", "SAPA67", "memii6/7"];
+const words = ["MiiNova", "Siwat", "m.mii.kub", "SAPA67", "IT SAPA"];
 
-// Variables to track the position and deletion status of the word
 let wordIndex = 0;
-let charIndex = 0;
+let charIndex = 0; 
 let isDeleting = false;
 
 const typeEffect = () => {

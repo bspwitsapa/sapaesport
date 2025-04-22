@@ -1,48 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Lilita+One&family=Lobster&family=Special+Gothic+Condensed+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: arial;
 }
-* a {
-  text-decoration: none;
+
+h2 {
+  font-family: "Anuphan", sans-serif;
 }
-* li {
-  list-style: none;
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  background: #1D1E23;
+  color: #fff;
+  position: relative;
 }
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
 .container {
-  min-height: 50vh;
+  overflow-x: hidden;
+  min-height: 100vh;
   padding-bottom: 50px;
   margin: 0 auto;
   position: relative;
+  z-index: 1;
 }
-.bg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.bg::after {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  filter: brightness(45%);
-  background-image: url("https://pbs.twimg.com/media/FFS8L0nXwAoU8Go?format=jpg&name=4096x4096");
-  background-size: cover; /* ปรับ background-size เป็น cover */
-  background-position: center;
-  background-attachment: fixed; /* เพิ่ม background-attachment เป็น fixed */
-}
-.container {
-  overflow-x: hidden;
-}
+
 @keyframes animate {
-  to{
-    background-position: 450%
+  to {
+    background-position: 450%;
   }
 }
+
 .navBar {
   display: flex;
   width: 85%;
@@ -51,57 +53,62 @@
   align-items: center;
   height: 15vh;
 }
+
 .navBar ul {
   display: flex;
   align-items: center;
 }
+
 .navBar ul li {
   padding: 0 25px;
 }
+
 .navBar ul li a {
   font-size: 1rem;
   color: #fff;
   font-weight: 400;
   letter-spacing: 1.5px;
 }
+
 .navBar .logo a {
   font-size: 2.3rem;
   color: #fff;
 }
+
 .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 85%;
+  width: 90%;
   position: absolute;
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  align-items: center;
 }
-.container {
-  min-height: 100vh;
-  padding-bottom: 50px;
-  margin: 0 auto;
-  position: relative;
-}
+
 .esport {
   color: #fff;
   padding: 25px;
 }
+
 .card {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 20px;
 }
+
 .card h2 {
   color: #fff;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+  padding: 5px 10px;
+  border-radius: 10px;
   position: absolute;
   bottom: 15px;
   left: 20px;
   font-size: 1.6rem;
   letter-spacing: 1px;
 }
+
 .card .box1,
 .box2,
 .box3,
@@ -113,108 +120,98 @@
   position: relative;
   border-radius: 25px;
   cursor: pointer;
+  transition: 0.5s;
 }
+
+.card div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 19px 38px rgba(255, 255, 255, 0.2), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+}
+
 .box1 {
-  background-image: url("https://www.gamemonday.com/wp-content/uploads/2024/03/RoV-250324-01.jpg");
+  background-image: url("https://www.online-station.net/wp-content/uploads/2023/02/waverov.jpg");
 }
+
 .box2 {
   background-image: url("https://img.4gamers.com.tw/news-image/dcb583b7-97b4-4b6c-9613-4291422c6db2.jpg");
 }
+
 .box3 {
   background-image: url("https://www.online-station.net/wp-content/uploads/2022/10/Skin-20221029_Sephera.jpg");
 }
+
 .box4 {
   background-image: url("https://i0.wp.com/news.seagm.com/wp-content/uploads/2023/03/krixi-skin.jpeg?resize=750%2C461&ssl=1");
 }
+
 .esport h2 {
   font-size: 2.5rem;
   letter-spacing: 1.8px;
-  background: linear-gradient(135deg, #898121 0%, #E8751A 25%, #FDA403 50%, #E8751A 75%, #898121 100%);
+  background: linear-gradient(135deg, #ffea03 20%, #e6ff03b6 25%, #e6ff036e 50%, #e6ff03b6 75%, #ffea03 100%);
   background-size: 400%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   animation: animate 10s linear infinite;
 }
-.text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+
 .txt h1 {
   font-size: 8.0rem;
-   background: linear-gradient(135deg, #898121 0%, #E8751A 25%, #FDA403 50%, #E8751A 75%, #898121 100%);
+  background: linear-gradient(135deg, #ffea03 20%, #e6ff03b6 25%, #e6ff036e 50%, #e6ff03b6 75%, #ffea03 100%);
   background-size: 400%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   animation: animate 10s linear infinite;
 }
+
 .esport p {
   opacity: 0.6;
   font-size: 1.5rem;
 }
+
 .tnx h2 i {
   color: #fd7e13;
 }
-.card div {
-  transition: 0.5s;
-}
-.card div:hover {
-  transition: 0.3s;
-  transform: translateY(-10px);
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
-/* Importing Google font - Inter */
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-
-body {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background: #1D1E23;
-
-}
 
 h1 {
-    color: #fff;
-    font-size: 5.0vh;
-    font-weight: 600;
+  color: #fff;
+  font-size: 5.0vh;
+  font-weight: 600;
 }
 
 h1 span {
-    color: #BD53ED;
-    position: relative;
+  color: #51f73b;
+  position: relative;
 }
 
 h1 span::before {
-    content: "";
-    height: 30px;
-    width: 2px;
-    position: absolute;
-    top: 50%;
-    right: -8px;
-    background: #BD53ED;
-    transform: translateY(-45%);
-    animation: blink 0.7s infinite;
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: #BD53ED;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
 }
 
 h1 span.stop-blinking::before {
-    animation: none;
+  animation: none;
 }
 
 @keyframes blink {
-    50% { opacity: 0 }
+  50% {
+    opacity: 0;
+  }
 }
+
 .audio-container {
-  width: 200px; /* ลดความกว้างลง */
-  height: 80px; /* ลดความสูงลง */
-  margin-top: 20px; /* ปรับค่า margin-top ตามที่ต้องการ */
+  width: 200px;
+  height: 80px;
+  margin-top: 20px;
 }
-/* สำหรับหน้า Sources */
+
 .page-sources {
   display: none;
 }
@@ -223,68 +220,60 @@ h1 span.stop-blinking::before {
   .navBar {
     width: 100%;
   }
-  .bg::after {
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    filter: brightness(45%);
-    background-image: url("sin.jpg");
-    background-size: cover; /* ปรับ background-size เป็น cover */
-    background-position: center;
-    background-attachment: fixed; /* เพิ่ม background-attachment เป็น fixed */
-  }
+
   .container {
     overflow-x: hidden;
+    min-height: 165vh;
+    max-height: none;
   }
-.card .box1,
-.box2,
-.box3,
-.box4 {
-  width: 190px; /* ปรับความกว้างของกล่อง */
-  height: 190px; /* ปรับความสูงของกล่อง */
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  border-radius: 25px;
-  cursor: pointer;
-}
+
+  .card .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 190px;
+    height: 190px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+  }
 
   .card h2 {
     font-size: 1.0rem;
   }
+
   h1 {
     font-size: 2.5vh;
   }
+
   .esport h2 {
     font-size: 0.7rem;
   }
+
   .txt h1 {
     font-size: 2.5rem;
   }
+
   .esport p {
     font-size: 0.5rem;
   }
-  .container {
-    min-height: 165vh;
-  }
+
   .content {
     width: 95%;
   }
+
   .card {
     grid-template-columns: auto;
   }
+
   body {
     background: #444;
   }
+
   audio {
     width: 180px;
     height: 50px;
   }
-  .container {
-    max-height: none;
-}
 }
