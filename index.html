@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAPA E-Sport 2024</title>
   <link rel="shortcut icon" type="image/x-icon" href="sapa.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="animate.js" defer></script>
+  <script src="scripts.js" defer></script>
 </head>
+
 <body>
+  <div class="mobile-cover-video">
+  <video autoplay muted loop playsinline>
+    <source src="mobile.webm" type="video/mp4">
+    เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+  </video>
+</div>
+
+  <audio id="bgMusic" autoplay loop muted>
+    <source src="ride on.mp3" type="audio/mpeg">
+    เบราว์เซอร์ของคุณไม่รองรับเสียงเพลงพื้นหลัง
+  </audio>
 
   <video autoplay muted loop playsinline id="bgVideo">
-    <source src="bg01.mp4" type="video/mp4">
+    <source src="bg01.webm" type="video/mp4">
     บราวเซอร์ของคุณไม่รับรองวิดีโอพื้นหลัง.
   </video>
+
+  <button id="muteBtn" class="mute-toggle" title="เปิด/ปิดเสียง">
+    <i class="fa-solid fa-volume-high fa-beat-fade"></i>
+  </button>
 
   <div class="container bg">
     <div class="navBar"></div>
@@ -32,24 +51,21 @@
         <h1>This page was made by <span></span></h1>
 
         <div class="creator">
-          <p><small>เว็บไซต์สำหรับลงทะเบียนการแข่งขัน SAPA E-Sport ของโรงเรียนบางสะพานวิทยา จัดทำขึ้นโดยสภานักเรียนทีมเทคโนโลยีสารสนเทศ (IT Support  - Student Council)</small></p>
-        </div>
-
-        <div class="audio-container">
-          <audio controls autoplay loop>
-            <source src="ride on.mp3">
-          </audio>
+          <p><small>เว็บไซต์สำหรับลงทะเบียนการแข่งขัน SAPA E-Sport ของโรงเรียนบางสะพานวิทยา
+              จัดทำขึ้นโดยสภานักเรียนทีมเทคโนโลยีสารสนเทศ (IT Support - Student Council)</small></p>
         </div>
       </div>
 
       <div class="card" style="width:50%;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEsy8SRF0-sP7Qz_1L7tOP3jJ32-zy1xBTGNFHJZ0zWOMSOQ/viewform?usp=sf_link" target="_blank">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEsy8SRF0-sP7Qz_1L7tOP3jJ32-zy1xBTGNFHJZ0zWOMSOQ/viewform?usp=sf_link"
+          target="_blank">
           <div class="box1">
             <h2>ลงทะเบียน</h2>
           </div>
         </a>
 
-        <a href="https://docs.google.com/spreadsheets/d/1FDUb9FzbNlO0YOX9oB7H07QKu64xDo_kZvapc8h-Mwk/edit?usp=sharing" target="_blank">
+        <a href="https://docs.google.com/spreadsheets/d/1FDUb9FzbNlO0YOX9oB7H07QKu64xDo_kZvapc8h-Mwk/edit?usp=sharing"
+          target="_blank">
           <div class="box2">
             <h2>ตรวจสอบ</h2>
           </div>
@@ -71,4 +87,5 @@
   </div>
 
 </body>
+
 </html>
